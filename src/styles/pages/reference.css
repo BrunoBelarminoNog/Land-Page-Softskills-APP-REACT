@@ -1,0 +1,90 @@
+#page-reference {
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+#page-reference>main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 40%;
+    align-items: center;
+}
+
+
+#page-reference .content-img {
+    position: relative;
+    height: 600px;
+}
+
+#page-reference .content-img>img {
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    transform: scaleX(-1);
+    right: 24px;
+    justify-self: end;
+    top: 0;
+    right: 0;
+}
+
+#page-reference .content-wrapper h1 {
+    font-size: 48px;
+    line-height: 52px;
+}
+
+#page-reference .content-wrapper h1,
+#page-reference .content-wrapper p {
+    margin-bottom: 24px;
+}
+
+#page-reference main:last-of-type {
+    display: flex;
+}
+
+#page-reference #content-reference {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#page-reference #content-reference .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin: 12px 0;
+}
+
+#page-reference #content-reference .cards .card {
+    border: 3px solid #ED615C;
+    border-radius: 12px;
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.37);
+    transition: background-color 200ms;
+}
+
+#page-reference #content-reference .cards .card:hover {
+    background-color: #ed615c1e;
+}
+
+#page-reference .cards .card img {
+    width: 100%;
+}
+
+#page-reference .cards .card h2 {
+    font-size: 24px;
+    margin: 12px 0;
+}
+
+#page-reference .cards .card p{
+    font-size: 16px;
+    text-align: center;
+}
