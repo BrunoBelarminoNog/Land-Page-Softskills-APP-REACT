@@ -4,6 +4,7 @@ import { CSSTransition, SwitchTransition} from 'react-transition-group'
 
 import Index from './pages/Landing';
 import Referencias from './pages/Reference';
+import Future from './pages/Future';
 
 
 function Routes() {
@@ -16,6 +17,7 @@ function Routes() {
                 <Switch location={location} >
                     <Route path="/" exact component={Index}/>
                     <Route path="/referencias" exact component={Referencias} />
+                    <Route path="/ofuturo" exact component={Future} />
                 </Switch>
             </CSSTransition>
         </SwitchTransition>

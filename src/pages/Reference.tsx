@@ -14,8 +14,6 @@ import "../styles/pages/reference.css"
 function Index() {
     const { hash} = useLocation();
 
-    console.log(hash)
-
     useEffect(() => {
         if (hash === '') {
             window.scrollTo({
@@ -117,7 +115,7 @@ function Index() {
 
                             <div className="div-reference-sites-content">
                                 <h2>Inspire-se na internet!</h2>
-                                <p>Uma listinha de alguns sites inspiradores para a turma do front-end  (para os backs também!)</p>
+                                <p>Uma listinha de alguns sites inspiradores para a turma do front-end  (e para os backs também!)</p>
                                 <ul>
                                     <li><a href="https://medium.com/" target="_blanck">Medium <FaExternalLinkAlt className="link-external"/></a></li>
                                     <li className="link-left"><a href="https://design.google/" target="_blanck">Google Design <FaExternalLinkAlt className="link-external" /></a></li>
@@ -133,7 +131,7 @@ function Index() {
                         </div>
 
 
-                        <Link to="/referencias#main-content-reference-sites" className="next-content ">
+                        <Link to="/ofuturo" className="next-content ">
                             Vamos conversar sobre o futuro<FaAngleDoubleRight size={24} />
                         </Link>
                     </div>
