@@ -1,47 +1,80 @@
 #page-reference {
     height: 100%;
     width: 70%;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 24px;
 }
 
-#page-reference>main {
+#page-reference main:nth-child(1) {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 40%;
+    grid-template-columns: 1fr 50%;
     align-items: center;
+    position: relative;
 }
 
 
 #page-reference .content-img {
-    position: relative;
+    position: absolute;
+    top: 80;
+    left: -20;
     height: 600px;
+    z-index: 1;
 }
 
 #page-reference .content-img>img {
-    position: absolute;
     width: 800px;
     height: 600px;
     transform: scaleX(-1);
     right: 24px;
     justify-self: end;
-    top: 0;
-    right: 0;
 }
 
-#page-reference .content-wrapper h1 {
-    font-size: 48px;
-    line-height: 52px;
+#page-reference .content-button {
+    display: flex;
+    z-index: 100;
+}
+
+#page-reference .content-wrapper {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 26px;
+    z-index: 100;
 }
 
 #page-reference .content-wrapper h1,
 #page-reference .content-wrapper p {
-    margin-bottom: 24px;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.294);
 }
 
-#page-reference main:last-of-type {
-    display: flex;
+#page-reference .content-wrapper h1 {
+    font-size: 46px;
+    line-height: 52px;
 }
+
+#page-reference .content-wrapper p {
+    font-size: 18px;
+}
+
+#page-reference .next-content.button-reference {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+#page-reference main:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+
 
 #page-reference #content-reference {
     display: flex;
@@ -49,6 +82,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: 0 auto;
 }
 
 #page-reference #content-reference .cards {
@@ -56,7 +90,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
-    margin: 12px 0;
+    margin: 24px 0;
 }
 
 #page-reference #content-reference .cards .card {
@@ -87,4 +121,85 @@
 #page-reference .cards .card p{
     font-size: 16px;
     text-align: center;
+}
+
+#page-reference main:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding-top: 80px;
+}
+
+#page-reference #content-reference-sites{
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-reference-sites .div-reference-sites {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#content-reference-sites .div-reference-sites .div-reference-sites-img img {
+    height: 500px;
+}
+
+#content-reference-sites .div-reference-sites .div-reference-sites-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+#content-reference-sites .div-reference-sites .div-reference-sites-content p {
+    text-align: right;
+}
+
+#content-reference-sites .div-reference-sites .div-reference-sites-content ul {
+    list-style: none;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#content-reference-sites .div-reference-sites .div-reference-sites-content li {
+    margin: 4px 0;
+}
+
+#content-reference-sites .div-reference-sites .div-reference-sites-content li.link-left {
+    align-self: flex-end;
+}
+#content-reference-sites .div-reference-sites .div-reference-sites-content li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    transition: all 400ms;
+}
+
+#content-reference-sites .div-reference-sites .div-reference-sites-content li a .link-external {
+    margin-left: 8px;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    color: #ED615C;
+    transition: all 400ms;
+}
+
+#content-reference-sites .div-reference-sites .div-reference-sites-content li a:hover {
+    font-weight: 500;
+}
+
+#content-reference-sites .div-reference-sites .div-reference-sites-content li a:hover .link-external {
+    opacity: 0.8;
+    width: 18px;
+    height: 18px;
 }

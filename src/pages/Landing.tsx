@@ -17,9 +17,9 @@ function Index() {
 
                     <div className="content-wrapper">
                         <h1>Criatividade no Desenvolvimento de Software</h1>
-                        <p>Dentre as softskils mais pedidas do mercado, a critividade é umas das habilidades mais buscadas em desenvolvedores, líderes e CEOs de empresas e startups.</p>
-                        <Link to="/referencias" className="next-content">
-                            Quer ser mais criativo?
+                        <p>Você sabia que dentre as softskils mais pedidas do mercado, a criatividade é umas das <strong>habilidades mais buscadas</strong> em desenvolvedores? Preocupados com isso, criamos este pequeno manual para te ajudar a desenvolver seu lado criativo!</p>
+                        <Link to="/referencias" className="next-content button-initial">
+                            CRIE.ative-se!
                             <FaAngleDoubleRight className="next-content-icon" size={40} />
                         </Link>
                     </div>

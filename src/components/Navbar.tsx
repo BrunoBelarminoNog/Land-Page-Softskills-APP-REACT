@@ -1,30 +1,27 @@
 import React from 'react';
-import { Link, BrowserRouter } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import "../styles/components/navbar.css"
 
 function Navbar() {
     return (
-        <BrowserRouter>
-            <nav>
-                <div>
-                    <h1 className="nav-logo">CRIE.ative</h1>
+        <nav>
+            <div>
+                <h1 className="nav-logo">CRIE.ative</h1>
 
-                    <ul>
-                        <li>
-                        <Link to="" className="nav-link">Home</Link>
-                            <Link to="" className="nav-link">Loren</Link>
-                            <Link to="" className="nav-link">Loren</Link>
+                <ul>
+                    <li>
+                        <NavLink to="/" exact={true} activeClassName="is-active" className="nav-link">início</NavLink>
+                        <NavLink to="/referencias" activeClassName="is-active" className="nav-link">Referencie-se</NavLink>
+                        <NavLink to="/futuro" activeClassName="is-active" className="nav-link">o Futuro</NavLink>
+                    </li>
+                </ul>
 
-                        </li>
-                    </ul>
-
-                    <Link to="" className="nav-button">
-                        ASSINE
+                <Link to="" className="nav-button">
+                    ASSINE
                     </Link>
-                </div>
-            </nav>
-        </BrowserRouter>
+            </div>
+        </nav>
     )
 }
 

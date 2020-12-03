@@ -16,6 +16,7 @@ nav div h1.nav-logo {
 
 nav div {
     width: 70%;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -44,4 +45,8 @@ nav ul li .nav-link:last-child {
     padding: 2px 32px;
     border: 3px solid #5222D0;
     border-radius: 24px;
+}
+
+nav ul li .is-active {
+    text-decoration: underline;
 }

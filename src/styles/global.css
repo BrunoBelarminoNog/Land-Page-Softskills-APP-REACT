@@ -16,7 +16,8 @@ textarea {
 }
 
 .next-content {
-    width: 90%;
+    width: 80%;
+    max-width: 400px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,7 +33,7 @@ textarea {
 
     border-radius: 24px;
 
-    padding: 12px 12px;
+    padding: 12px 18px;
 
     transition: all 400ms;
 }
@@ -45,4 +46,38 @@ textarea {
 
 .next-content:hover .next-content-icon {
     color: #ED615C;
+}
+
+@keyframes up{
+    0%{
+        transform: translateY(2px);
+    }
+    100%{
+        transform: translateY(-4px)
+    }
+}
+
+@keyframes leftright {
+    0% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(-4px)
+    }
+}
+
+.button-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.button-navigation:hover {
+    animation: up ease-out 0.3s 3;
+}
+
+.button-navigation.button-navigation-lateral:hover {
+    animation: leftright ease-out 0.3s 3;
 }
