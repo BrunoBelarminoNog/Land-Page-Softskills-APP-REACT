@@ -1,4 +1,4 @@
-import React, {useState, ChangeEvent} from 'react';
+import React, {useState} from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
@@ -8,42 +8,9 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import { makeStyles } from '@material-ui/core/styles';
-import styled from 'styled-components';
 
 import "../styles/components/navbar.css"
 
-const StyledBurger = styled.div`
-  width: 2rem;
-  height: 2rem;
-  position: fixed;
-  top: 15px;
-  right: 20px;
-  z-index: 20;
-  display: none;
-  @media (max-width: 768px) {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-  }
-  div {
-    width: 2rem;
-    height: 0.25rem;
-    background-color:'#ccc';
-    border-radius: 10px;
-    transform-origin: 1px;
-    transition: all 0.3s linear;
-    &:nth-child(1) {
-      transform: 'rotate(45deg)';
-    }
-    &:nth-child(2) {
-      transform: 'translateX(100%)' ;
-      opacity: 1;
-    }
-    &:nth-child(3) {
-      transform:'rotate(-45deg)' ;
-    }
-  }
-`;
 
 const useStyles = makeStyles({
     root: {
@@ -58,7 +25,6 @@ const useStyles = makeStyles({
     },
     
 });
-
 
 
 function Navbar() {
