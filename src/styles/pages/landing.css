@@ -4,6 +4,7 @@
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 92px;
+    z-index: 20;
 }
 
 #page-index main {
@@ -22,6 +23,7 @@
 
 }
 
+
 #page-index .content-wrapper p {
     font-weight: 300;
     font-size: 22px;
@@ -39,7 +41,6 @@
     width: 800px;
     height: 600px;
     object-fit: contain;
-    right: 24px;
     justify-self: end;
     top: 0;
     right: 0;
@@ -51,4 +52,130 @@
     font-weight: 600;
     justify-content: space-around;
     width: 80%;
+}
+
+
+
+@media (max-width: 1300px) {
+     #page-index {
+         width: 80%;
+     }
+
+    #page-index .content-wrapper h1 {
+        font-size: 32px;
+        line-height: 42px;
+
+    }
+
+    #page-index .content-wrapper p {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 24px 0;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    #page-index {
+        width: 90%;
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 850px) {
+    #page-index {
+        width: 95%;
+        margin-top: 110px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #page-index main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #page-index .content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 40%;
+        grid-template-areas: 
+            "tittle tittle"
+            "content button";
+    }
+
+    #page-index .content-wrapper h1 {
+        font-size: 48px;
+        margin-bottom: 0px;
+        line-height: 52px;
+        grid-area: tittle;
+
+    }
+
+    #page-index .content-wrapper p {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 28px;
+        margin: 24px 0;
+        grid-area: content;
+    }
+
+    #page-index .next-content {
+        justify-self: flex-end;
+        align-self: center;
+        grid-area: button;
+        height: 80px;
+        font-size: 20px;
+        width: 90%;
+    }
+
+    #page-index .content-img {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-right: 200px;
+        margin-top: -60px;
+    }
+
+    #page-index .content-img img {
+        position: relative;
+        width: 800px;
+        z-index: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    #page-index .content-img {
+        display: none;
+        visibility: hidden;
+    }
+
+    #page-index .content-wrapper {
+        grid-template-areas:
+            "tittle tittle"
+            "content content"
+            "button button";
+    }
+
+    #page-index .content-wrapper h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    #page-index .content-wrapper p {
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin: 24px 0;
+        grid-area: content;
+    }
+
+    #page-index .next-content {
+        justify-self: center;
+        align-self: center;
+        grid-area: button;
+        width: 70%;
+    }
+
 }

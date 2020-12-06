@@ -50,6 +50,7 @@ function Index() {
 
                     <div className="content-wrapper">
                         <h1>Busque por referências</h1>
+                        <img src={referenceImg} alt="Ideia" />
                         <p>Nada é original, e tudo que existe foi construído em cima do que veio antes.
                         Ou seja, nenhum software traz um recurso totalmente novo, e sim uma mistura daqueles programas preferidos do programador.<br/>
                         E aqui quero te deixar uma dica: além de buscar referências diretas em outros programas e no GitHub, pare e olhe mais à sua volta e absorva referências de todos os lugares.

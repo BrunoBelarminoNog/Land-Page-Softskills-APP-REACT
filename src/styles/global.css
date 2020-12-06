@@ -72,7 +72,6 @@ textarea {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 2px solid white;
 }
 .button-navigation:hover {
     animation: up ease-out 0.3s 3;
@@ -80,4 +79,10 @@ textarea {
 
 .button-navigation.button-navigation-lateral:hover {
     animation: leftright ease-out 0.3s 3;
+}
+
+@media (max-width: 1024px) {
+    body{
+        overflow: scroll;
+    }
 }

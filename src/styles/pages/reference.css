@@ -61,6 +61,11 @@
     font-size: 18px;
 }
 
+#page-reference .content-wrapper img {
+    display: none;
+    visibility: hidden;
+}
+
 #page-reference .next-content.button-reference {
     flex-direction: row-reverse;
     text-align: right;
@@ -144,6 +149,7 @@
 #content-reference-sites .div-reference-sites {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 #content-reference-sites .div-reference-sites .div-reference-sites-img img {
@@ -202,4 +208,197 @@
     opacity: 0.8;
     width: 18px;
     height: 18px;
+}
+
+
+@media (max-width: 1024px) {
+    #page-reference {
+        width: 100%;
+        margin-top: 150px;
+        position: relative;
+    }
+
+    #page-reference main:nth-child(1),
+    #page-reference main:nth-child(2), 
+    #page-reference main:nth-child(3){
+        height: 100%;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    #page-reference main:nth-child(2) {
+        width: 100vw;
+        height: 600px;
+        padding: 0 30px;
+        background-color: #9c9ce277;
+    }
+
+    #page-reference #content-reference .cards .card {
+       background-color: #fff;
+    }
+    #page-reference main:nth-child(3) {
+        margin: 0 auto;
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+
+    #content-reference-sites .div-reference-sites .div-reference-sites-content li a .link-external {
+        opacity: 0.8;
+        width: 18px;
+        height: 18px;
+    }
+    #page-reference a.button-navigation {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 850px) {
+    #page-reference {
+        width: 95%;
+        margin-top: 110px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #page-reference .content-img {
+        left: 0px;
+        height: 600px;
+    }
+
+    #page-reference .content-img>img {
+        width: 500px;
+    }
+
+    #page-reference .content-wrapper h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    #page-reference .content-wrapper p {
+        font-size: 1rem;
+    }
+
+    #page-reference .next-content.button-reference {
+        font-size: 1rem;
+    }
+
+    #page-reference #content-reference .cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+        margin: 24px 0;
+    }
+
+    #page-reference .cards .card h2 {
+        font-size: 1.5rem;
+        margin: 12px 0;
+    }
+
+    #page-reference .cards .card p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #content-reference-sites .div-reference-sites .div-reference-sites-img img {
+        height: 300px;
+    }
+
+    #content-reference-sites .div-reference-sites .div-reference-sites-content p {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    #content-reference-sites .div-reference-sites .div-reference-sites-content ul {
+        width: 100%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content-reference-sites .div-reference-sites .div-reference-sites-content li a {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 540px) {
+     #page-reference {
+         width: 100vw;
+         margin-top: 80px;
+     }
+
+     #page-reference main:nth-child(1) {
+         display: flex;
+         flex-direction: column;
+         margin-top: 12px;
+     }
+
+     #page-reference .content-img {
+        display: none;
+        visibility: hidden;
+    }
+
+    #page-reference .content-wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+     #page-reference .content-wrapper img {
+         display: flex;
+         visibility: visible;
+         width: 90%;
+     }
+
+     #page-reference .content-wrapper h1,
+     #page-reference .content-wrapper p {
+        text-align: left;
+     }
+
+     #page-reference .next-content.button-reference{
+         width: 95%;
+     }
+
+     #page-reference #main-content-reference {
+         height: 100%;
+         margin-bottom: 12px;
+     }
+     #page-reference #content-reference .cards {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 32px;
+         margin: 50px 12px;
+     }
+
+     #content-reference-sites .div-reference-sites {
+         display: flex;
+         flex-direction: column;
+         gap: 24px;
+     }
+
+     #content-reference-sites .div-reference-sites .div-reference-sites-content {
+         align-items: center;
+     }
+     #content-reference-sites .div-reference-sites .div-reference-sites-content p {
+         text-align: center;
+         margin-bottom: 24px;
+     }
+
+     #content-reference-sites .div-reference-sites .div-reference-sites-content ul {
+         width: 90%;
+         margin-bottom: 40px;
+     }
 }
