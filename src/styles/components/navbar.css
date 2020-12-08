@@ -93,10 +93,10 @@ nav ul li {
 
 #burger {
     visibility: hidden;
-     width: 2rem;
-     height: 2rem;
+     width: 1.75rem;
+     height: 1.75rem;
      position: fixed;
-     top: 25px;
+     top: 15px;
      right: 40px;
      z-index: 20;
      display: none;
@@ -122,6 +122,9 @@ nav ul li {
 }
 
 @media (max-width: 768px) {
+    nav {
+        height: 60px;
+    }
 
     nav div#burguer-menu {
         flex-flow: column nowrap;
@@ -135,18 +138,21 @@ nav ul li {
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
         padding-left: 0;
-        background-color: #000000c4;
-        box-shadow: 1px 0px 8px 6px rgba(37, 37, 37, 0.158);
-        transition: transform 0.3s ease-in-out;
+        background-color: #eeeded;
+        transition: all 0.3s ease-in-out;
 
         z-index: 450;
     }
 
     nav div#burguer-menu.closed {
         transform: translateX(100%);
+        box-shadow: 1px 0px 0px 100vw rgba(15, 15, 15, 0);
+
     }  
     nav div#burguer-menu.open {
         transform: translateX(0);
+        box-shadow: 1px 0px 0px 100vw rgba(15, 15, 15, 0.534);
+
     }
 
     
@@ -160,7 +166,7 @@ nav ul li {
 
 
     #burger div {
-        width: 2rem;
+        width: 1.75rem;
         height: 0.25rem;
         border-radius: 10px;
         transform-origin: 1px;
@@ -171,8 +177,7 @@ nav ul li {
         background-color: rgb(0, 0, 0);
     }
     nav #burger.open div {
-        background-color: rgb(255, 255, 255);
-
+        background-color: rgb(0, 0, 0);
     }
     nav #burger.open div:nth-child(1) {
         transform: rotate(45deg);
@@ -189,13 +194,12 @@ nav ul li {
     nav div#burguer-menu ul li {
         display: flex;
        flex-direction: column;
-       color: white;
     }
 
     nav div#burguer-menu ul li .nav-link{
-        color: rgb(255, 255, 255);
         font-size: 24px;
         text-align: center;
+    
     }
 
     nav div#burguer-menu ul li .nav-link.is-active {
