@@ -383,6 +383,14 @@
          margin: 50px 12px;
      }
 
+      #page-reference #content-reference .cards .card {
+          margin-bottom: 32px;
+      }
+
+      #page-reference #content-reference .cards .card:last-child {
+          margin-bottom: 0px;
+      }
+
      #content-reference-sites .div-reference-sites {
          display: flex;
          flex-direction: column;
